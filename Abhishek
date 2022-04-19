@@ -1,0 +1,27 @@
+// Online C++ compiler to run C++ program online
+#include <iostream>
+using namespace std;
+int main() {
+    int counter=0;
+    int arr[]={54,67,87,46,98,102,66,54};
+    int size=sizeof(arr)/sizeof(int);
+    int search;
+    cin>>search;
+    for(int i=0;i<size;i++)
+    {
+        if(arr[i]==search)
+        {
+            cout<<"position found  :-"<<""<<i+1;
+            counter=1;
+            break;
+        }
+        if(counter==0)
+        {
+            cout<<"Element is not found"<<endl;
+            break;
+        }
+    }
+
+
+    return 0;
+}
